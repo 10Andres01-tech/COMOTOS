@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotoCompare — Comparador de motos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo-icon">M</span>
+        Moto<span>Compare</span>
+      </a>
+
+      <nav>
+        <a href="#comparar">Comparar</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#ranking">Ranking</a>
+      </nav>
+
+      <button class="btn btn-outline">Iniciar sesión</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="eyebrow">🏍️ Tu próxima moto empieza aquí</span>
+
+          <h1>
+            Compara motos.<br>
+            <span>Elige la tuya.</span>
+          </h1>
+
+          <p>
+            Compara prestaciones, precio, consumo y características
+            de tus motos favoritas en un solo lugar.
+          </p>
+
+          <a href="#comparar" class="btn btn-primary">
+            Empezar a comparar →
+          </a>
+        </div>
+
+        <div class="hero-bike">
+          <div class="bike-glow"></div>
+          <div class="bike-placeholder">
+            🏍️
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARADOR -->
+    <section id="comparar" class="compare-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-label">COMPARADOR</span>
+            <h2>Elige tus motos</h2>
+          </div>
+
+          <span class="compare-count">0 / 3 seleccionadas</span>
+        </div>
+
+        <div class="bike-selectors">
+
+          <!-- MOTO 1 -->
+          <article class="bike-card selected">
+            <div class="bike-image">
+              <span class="bike-category">SPORT</span>
+              <span class="bike-emoji">🏍️</span>
+            </div>
+
+            <div class="bike-info">
+              <span class="brand">YAMAHA</span>
+              <h3>YZF-R7</h3>
+
+              <div class="price">
+                $10.499 <small>USD</small>
+              </div>
+
+              <button class="btn btn-primary full-width">
+                Seleccionada ✓
+              </button>
+            </div>
+          </article>
+
+          <!-- MOTO 2 -->
+          <article class="bike-card selected">
+            <div class="bike-image red">
+              <span class="bike-category">SPORT</span>
+              <span class="bike-emoji">🏍️</span>
+            </div>
+
+            <div class="bike-info">
+              <span class="brand">KAWASAKI</span>
+              <h3>Ninja 650</h3>
+
+              <div class="price">
+                $8.899 <small>USD</small>
+              </div>
+
+              <button class="btn btn-primary full-width">
+                Seleccionada ✓
+              </button>
+            </div>
+          </article>
+
+          <!-- AÑADIR -->
+          <article class="add-bike">
+            <div class="plus">+</div>
+            <h3>Añadir otra moto</h3>
+            <p>Compara hasta 3 motos</p>
+
+            <button class="btn btn-outline">
+              Seleccionar moto
+            </button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="results">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-label">RESULTADOS</span>
+            <h2>Yamaha YZF-R7 vs Kawasaki Ninja 650</h2>
+          </div>
+
+          <button class="btn btn-outline">Compartir comparación ↗</button>
+        </div>
+
+        <!-- RESUMEN -->
+        <div class="summary-grid">
+
+          <div class="summary-card">
+            <span>Potencia</span>
+            <strong>73.4 <small>CV</small></strong>
+            <div class="comparison">
+              <span>R7</span>
+              <div class="bar">
+                <div style="width: 92%"></div>
+              </div>
+              <b>68 CV</b>
+            </div>
+          </div>
+
+          <div class="summary-card">
+            <span>Par motor</span>
+            <strong>67 Nm</strong>
+            <div class="comparison">
+              <span>R7</span>
+              <div class="bar">
+                <div style="width: 85%"></div>
+              </div>
+              <b>64 Nm</b>
+            </div>
+          </div>
+
+          <div class="summary-card">
+            <span>Peso</span>
+            <strong>188 kg</strong>
+            <div class="comparison">
+              <span>R7</span>
+              <div class="bar weight">
+                <div style="width: 75%"></div>
+              </div>
+              <b>193 kg</b>
+            </div>
+          </div>
+
+          <div class="summary-card">
+            <span>Precio</span>
+            <strong>$10.499</strong>
+            <div class="comparison">
+              <span>R7</span>
+              <div class="bar price-bar">
+                <div style="width: 80%"></div>
+              </div>
+              <b>$8.899</b>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TABLA -->
+        <div class="comparison-table">
+
+          <div class="table-header">
+            <div>Especificación</div>
+            <div>Yamaha YZF-R7</div>
+            <div>Kawasaki Ninja 650</div>
+          </div>
+
+          <div class="table-row">
+            <div>Motor</div>
+            <div>689 cc · 2 cilindros</div>
+            <div>649 cc · 2 cilindros</div>
+          </div>
+
+          <div class="table-row">
+            <div>Potencia</div>
+            <div class="highlight">73.4 CV</div>
+            <div>68 CV</div>
+          </div>
+
+          <div class="table-row">
+            <div>Par máximo</div>
+            <div>67 Nm</div>
+            <div>64 Nm</div>
+          </div>
+
+          <div class="table-row">
+            <div>Transmisión</div>
+            <div>6 velocidades</div>
+            <div>6 velocidades</div>
+          </div>
+
+          <div class="table-row">
+            <div>Peso</div>
+            <div>188 kg</div>
+            <div>193 kg</div>
+          </div>
+
+          <div class="table-row">
+            <div>Depósito</div>
+            <div>14 litros</div>
+            <div>15 litros</div>
+          </div>
+
+          <div class="table-row">
+            <div>Altura asiento</div>
+            <div>835 mm</div>
+            <div>790 mm</div>
+          </div>
+
+          <div class="table-row">
+            <div>Frenos</div>
+            <div>Disco doble / ABS</div>
+            <div>Disco doble / ABS</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section id="categorias" class="categories">
+      <div class="container">
+
+        <div class="section-heading center">
+          <span class="section-label">ENCUENTRA TU ESTILO</span>
+          <h2>Explora por categoría</h2>
+        </div>
+
+        <div class="category-grid">
+
+          <a href="#" class="category-card">
+            <span>🏁</span>
+            <h3>Sport</h3>
+            <p>Velocidad y adrenalina</p>
+          </a>
+
+          <a href="#" class="category-card">
+            <span>🛣️</span>
+            <h3>Naked</h3>
+            <p>Ciudad y carretera</p>
+          </a>
+
+          <a href="#" class="category-card">
+            <span>🏔️</span>
+            <h3>Adventure</h3>
+            <p>Para cualquier terreno</p>
+          </a>
+
+          <a href="#" class="category-card">
+            <span>🌆</span>
+            <h3>Scooter</h3>
+            <p>Prácticas y urbanas</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <h2>¿Tienes dos motos en mente?</h2>
+        <p>
+          Descubre cuál se adapta mejor a ti comparando todos sus detalles.
+        </p>
+
+        <a href="#comparar" class="btn btn-primary">
+          Comparar motos →
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="logo">
+        <span class="logo-icon">M</span>
+        Moto<span>Compare</span>
+      </div>
+
+      <p>© 2026 MotoCompare. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
